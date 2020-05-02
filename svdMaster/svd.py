@@ -32,7 +32,7 @@ def svd_1d(A, epsilon=1e-10):
         currentV = currentV / norm(currentV)
 
         if abs(np.dot(currentV, lastV)) > 1 - epsilon:
-            print("converged in {} iterations!".format(iterations))
+            #print("converged in {} iterations!".format(iterations))
             return currentV
 
 
